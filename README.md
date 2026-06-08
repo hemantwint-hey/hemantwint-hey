@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Hemant</h1>
 
-<h3 align="center">MCA Student | Java Full Stack Developer | Problem Solver</h3>
+<h3 align="center"> Java Full Stack Developer | Problem Solver</h3>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&center=true&width=600&lines=Java+Developer;Spring+Boot+Developer;DSA+Enthusiast;Future+Software+Engineer" />
@@ -10,7 +10,7 @@
 
 ### 🚀 About Me
 
-- 🎓 MCA Student
+
 - 💻 Learning Java Full Stack Development
 - 🌱 Currently learning Spring Boot, React, MySQL
 - 🏆 Solved 1000+ DSA problems
@@ -26,11 +26,7 @@
 
 ---
 
-### 📊 GitHub Stats
 
-![Stats](https://github-readme-stats.vercel.app/api?username=hemantwint-hey&show_icons=true&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=hemantwint-hey&layout=compact&theme=tokyonight)
 
 ---
 
