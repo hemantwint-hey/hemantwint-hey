@@ -12,7 +12,6 @@
 
 
 - 💻 Learning Java Full Stack Development
-- 🌱 Currently learning Spring Boot, React, MySQL
 - 🏆 Solved 500+ DSA problems
 - 📫 Reach me at: hemantwint@gmail.com
 
