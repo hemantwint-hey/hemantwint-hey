@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>body{margin:0;background:#0d1117;} a{color:#4493f8;} a:hover{color:#6cb6ff;}</style>
+</helmet>
+<div style="min-height:100vh;background:#0d1117;padding:24px 16px;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,sans-serif;color:#e6edf3;">
+  <div style="max-width:1012px;margin:0 auto;border:1px solid #30363d;border-radius:6px;overflow:hidden;">
+    <div style="padding:10px 16px;border-bottom:1px solid #30363d;background:#161b22;font-size:13px;color:#9198a1;">README.md · GitHub dark preview (approximate)</div>
+    <div ref="{{ bodyRef }}" style="padding:32px;font-size:16px;line-height:1.5;"></div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  bodyRef = React.createRef();
+  async componentDidMount() {
+    const html = await (await fetch('README.md')).text();
+    const el = this.bodyRef.current; if (!el) return;
+    el.innerHTML = html;
+    const set = (sel, s) => el.querySelectorAll(sel).forEach(n => Object.assign(n.style, s));
+    set('table', { borderCollapse: 'collapse', width: 'max-content', maxWidth: '100%', display: 'block', overflow: 'auto', margin: '0 0 16px' });
+    set('td, th', { border: '1px solid #3d444d', padding: '6px 13px' });
+    set('tr:nth-child(2n)', { background: '#151b23' });
+    set('th', { fontWeight: '600' });
+    set('code', { background: 'rgba(101,108,118,.2)', padding: '.2em .4em', borderRadius: '6px', fontSize: '85%', fontFamily: 'ui-monospace,SFMono-Regular,Menlo,monospace' });
+    set('h3', { fontSize: '1.25em', fontWeight: '600', margin: '24px 0 16px' });
+    set('p', { margin: '0 0 16px' });
+    set('img', { maxWidth: '100%', boxSizing: 'content-box' });
+    el.querySelectorAll('[align]').forEach(n => { if (n.tagName === 'DIV') n.style.textAlign = n.getAttribute('align'); });
+    el.querySelectorAll('[valign]').forEach(n => n.style.verticalAlign = n.getAttribute('valign'));
+    el.querySelectorAll('[width]').forEach(n => { if (n.tagName !== 'IMG') n.style.width = n.getAttribute('width'); });
+  }
+  renderVals() { return { bodyRef: this.bodyRef }; }
+}
+</script>
+</body>
+</html>
