@@ -25,7 +25,7 @@
     </td>
     <td width="66%" valign="middle">
       <h3>🏰 Welcome to my village, traveller.</h3>
-      <p>I'm <b>Hemant Kumar Mahto</b>, a <b>Java full-stack builder</b> from Bengaluru, currently a Tech Intern at <b>Futurense Technologies</b>.</p>
+      <p>I'm <b>Hemant Kumar Mahto</b>, a <b>Java full-stack builder</b> currently in Bengaluru, currently a Tech Intern at <b>Futurense Technologies</b>.</p>
       <p>
         ⚔️ I build backend and full-stack applications with <b>Java</b> and <b>Spring Boot</b>.<br />
         🧩 I sharpen my skills on DSA problems every week.<br />
